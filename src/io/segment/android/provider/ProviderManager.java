@@ -11,6 +11,7 @@ import io.segment.android.models.Track;
 import io.segment.android.providers.AmplitudeProvider;
 import io.segment.android.providers.BugsnagProvider;
 import io.segment.android.providers.CountlyProvider;
+import io.segment.android.providers.CrashlyticsProvider;
 import io.segment.android.providers.CrittercismProvider;
 import io.segment.android.providers.FlurryProvider;
 import io.segment.android.providers.GoogleAnalyticsProvider;
@@ -44,6 +45,7 @@ public class ProviderManager implements IProvider {
 		 */
 		this.addProvider(new AmplitudeProvider());
 		this.addProvider(new BugsnagProvider());
+		this.addProvider(new CrashlyticsProvider());
 		this.addProvider(new CountlyProvider());
 		this.addProvider(new CrittercismProvider());
 		this.addProvider(new FlurryProvider());
