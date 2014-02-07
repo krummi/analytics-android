@@ -23,7 +23,7 @@ public class SettingsThread extends LooperThreadWithHandler implements ISettings
 		handler.post(new Runnable() {
 			@Override
 			public void run() {
-				EasyJSONObject object = requester.fetchSettings();
+				EasyJSONObject object = new EasyJSONObject();
 				if (callback != null) callback.onSettingsLoaded(object != null, object);
 			}
 		});
