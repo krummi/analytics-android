@@ -9,17 +9,6 @@ import io.segment.android.models.EasyJSONObject;
 import io.segment.android.models.Identify;
 import io.segment.android.models.Screen;
 import io.segment.android.models.Track;
-import io.segment.android.providers.AmplitudeProvider;
-import io.segment.android.providers.BugsnagProvider;
-import io.segment.android.providers.CountlyProvider;
-import io.segment.android.providers.CrittercismProvider;
-import io.segment.android.providers.FlurryProvider;
-import io.segment.android.providers.GoogleAnalyticsProvider;
-import io.segment.android.providers.LocalyticsProvider;
-import io.segment.android.providers.MixpanelProvider;
-import io.segment.android.providers.OmnitureProvider;
-import io.segment.android.providers.QuantcastProvider;
-import io.segment.android.providers.TapstreamProvider;
 import io.segment.android.stats.Stopwatch;
 
 import java.util.LinkedList;
@@ -46,17 +35,7 @@ public class ProviderManager implements IProvider {
 		/**
 		 * Add New Providers Here
 		 */
-		this.addProvider(new AmplitudeProvider());
-		this.addProvider(new BugsnagProvider());
-		this.addProvider(new CountlyProvider());
-		this.addProvider(new CrittercismProvider());
-		this.addProvider(new FlurryProvider());
-		this.addProvider(new GoogleAnalyticsProvider());
-		this.addProvider(new LocalyticsProvider());
-		this.addProvider(new MixpanelProvider());
-		this.addProvider(new OmnitureProvider());
-		this.addProvider(new QuantcastProvider());
-		this.addProvider(new TapstreamProvider());
+    // All Providers Removed.
 	}
 	
 	/**
