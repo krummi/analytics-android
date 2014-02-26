@@ -15,10 +15,10 @@ public class Defaults {
 	
 	@SuppressWarnings("serial")
 	public static final Map<String, String> ENDPOINTS = new HashMap<String, String>() {{
-		this.put("identify", "/v1/identify");
-		this.put("alias",    "/v1/alias");
-		this.put("track",    "/v1/track");
-		this.put("import",   "/v1/import");
+		this.put("identify", "/events/segmentio");
+		this.put("alias",    "/events/segmentio");
+		this.put("track",    "/events/segmentio");
+		this.put("import",   "/events/segmentio");
 	}};
 	
 	public static String getSettingsEndpoint(String writeKey) {

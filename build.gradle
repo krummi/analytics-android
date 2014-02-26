@@ -23,3 +23,23 @@ android {
         }
     }
 }
+
+apply plugin: 'maven'
+
+group = 'io.segment.android'
+version = '4.4.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri("/opt/oz-local-repo"))
+            pom.project {
+                artifactId 'client_analytics_lib'
+                name 'OZ Analytics Library'
+                description 'OZ Android Analytics Library'
+                url 'https://github.com/krummi/analytics-android'
+                packaging 'aar'
+            }
+        }
+    }
+}
